@@ -19,6 +19,11 @@ get '/' do
   erb :index
 end
 
+get '/Quiz/:id' do
+	@quiz= Quiz.find(params(:id))
+	@questions= @quiz.questions
+	erb :Quiz 
+end
 post '/form' do
   "Hello World"
 end
