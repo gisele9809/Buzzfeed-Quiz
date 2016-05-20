@@ -1,0 +1,18 @@
+<%=@quiz.title%>
+
+<form action="/form" method="post"> 
+
+	<% @questions.each do |q| %>
+
+		<%= q.title %>
+
+		<% q.answers.each do |a| %>
+
+		  <input type="radio" name=<%= q.id.to_s %> value=<%= a.value %>> <%=a.title %>> 
+
+		<% end %>
+
+	<% end %>
+	 <input type="Submit">
+
+</form>
