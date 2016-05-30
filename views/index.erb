@@ -1,31 +1,17 @@
-
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Title</title>
+	<link rel="stylesheet" href="main.css">
+</head>
 <body>
-<h3>What do you like to do on your free time?</h3>
-<form action="/answer" method="post">
-  <input type="radio" name="Q1" value="sleeping" checked> Sleeping<br>
-  <input type="radio" name="Q1" value="hanging"> Hanging with Friends<br>
-  <input type="radio" name="Q1" value="reading"> Reading  
-  <input type="radio" name="Q1" value="netflix"> Watching Netflix  
- 
-<h3>How do you describe yourself?</h3>
-<form action="/answer" method="post">
-  <input type="radio" name="Q2" value="leader" checked> Leader <br>
-  <input type="radio" name="Q2" value="social"> Social<br>
-  <input type="radio" name="Q2" value="adventerous"> Aventerous 
-  <input type="radio" name="Q2" value="lazy"> Lazy 
 
-<h3>Do you like facing challenges?</h3>
-<form action="/answer" method="post">
-  <input type="radio" name="Q3" value="yes" checked> Yes <br>
-  <input type="radio" name="Q3" value="no"> No<br>
-  
- <input type="submit" value="Submit"> 
-</form> 
+	<h1>Buzzfeed Quiz</h1>
+
+	<%@quizes.each do |a|%>
+	<h3> <a href=<%="/Quiz/#{a.id}"%>> 
+	  <%=a.title%> </a> </h3>
+	<%end%>
 
 </body>
-</html>	
-
-<h1> Posts </h1>
-<h3> <%= @post.title %> </h3>
+</html>

@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+h1 {
+	color: red;
+
+}
+
+h1 , h2 {
+	font-family: helvetica;
+
+        
+}
+
+h3 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	display: inline-block;
+	color: black;
+	  height: 40px;
+
+  
+
+}
+
+.answer {
+    width: 48%;
+    display: inline-block;
+
+    }
