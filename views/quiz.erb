@@ -5,8 +5,8 @@
 	<link rel="stylesheet" href="<%= url('/main.css')%>">
 </head>
 <body>
-
-	<h1><%=@quiz.title%><h1>
+<div class="wrapper">
+	<h1><%=@quiz.title%></h1>
 
 	<form action="/form" method="post"> 
 
@@ -26,6 +26,7 @@
 		 <input type="Submit">
 
 	</form>
+</div>
 </body>
 </html>
 
